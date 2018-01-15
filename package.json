@@ -1,11 +1,10 @@
 {
-  "name": "react-project",
+  "name": "curso-desarrollo-aplicaciones-react",
   "version": "1.0.0",
-  "description": "Proyecto de prueba para react",
+  "description": "Curso desarrollo de aplicaciones con React",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm i -g gulp babel",
     "start": "gulp",
     "dev": "gulp"
   },
@@ -16,15 +15,18 @@
   ],
   "author": "Paulo Andrade",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Codeandomx/curso-de-introduccion-a-react"
+  },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@babel/register": "^7.0.0-beta.37",
-    "babel": "^6.23.0",
     "babel-core": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "browserify": "^15.1.0",

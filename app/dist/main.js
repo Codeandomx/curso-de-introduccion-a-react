@@ -10,8 +10,24 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(
-  'h1',
-  null,
-  'Hello, world!'
-), document.getElementById('root'));
+var rootElement = document.getElementById('root');
+var name = 'Codeando';
+
+var element = _react2.default.createElement(
+    'div',
+    { className: 'main' },
+    _react2.default.createElement(
+        'h1',
+        null,
+        'Hola!'
+    ),
+    _react2.default.createElement(
+        'h2',
+        null,
+        'Bienvenidos a ',
+        name
+    ),
+    _react2.default.createElement('img', { src: 'logo.png' })
+);
+
+_reactDom2.default.render(element, rootElement);

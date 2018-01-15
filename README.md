@@ -13,8 +13,8 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 
 ## Temario del curso
 
-1.- [Introducción a React](http://blog.codeando.org/articulos/introduccion-a-react-creando-aplicacion-basica.html)
-2.- [Introducción a JSX](http://blog.codeando.org/articulos/introduccion-a-jsx.html)
+1. [Introducción a React](http://blog.codeando.org/articulos/introduccion-a-react-creando-aplicacion-basica.html).
+2. [Introducción a JSX](http://blog.codeando.org/articulos/introduccion-a-jsx.html).
 
 ## Instalación del entorno de desarrollo
 

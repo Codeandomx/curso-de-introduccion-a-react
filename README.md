@@ -5,6 +5,12 @@ Curso desarrollo de aplicaciones con React, JSX, Browserify entre otras tecnolog
 
 # Contenido
 
+## Suscribete al curso
+
+Si quieres recibir actualizaciónes y novedades sobre el curso de Angular, da clic en "Watch" en la parte superior derecha.-
+
+![Suscribirse al curso de Angular](http://blog.codeando.org/img/github.png)
+
 ## Ejemplos del curso
 
 Este repositorio contiene varias ramas de desarrollo, en cada una de estas esta destinada para un ejemplo en especifico, el nombre de la rama hace referencia al tema visto.
@@ -16,6 +22,7 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 1. [Introducción a React](http://blog.codeando.org/articulos/introduccion-a-react-creando-aplicacion-basica.html).
 2. [Introducción a JSX](http://blog.codeando.org/articulos/introduccion-a-jsx.html).
 3. [Componentes, props y estados](http://blog.codeando.org/articulos/componentes-props-y-estados-con-react.html)
+4. [Entendiendo el virtual DOM con React](http://blog.codeando.org/articulos/entendiendo-el-virtual-dom-en-react.html)
 
 ## Instalación del entorno de desarrollo
 

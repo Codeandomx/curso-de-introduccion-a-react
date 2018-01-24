@@ -7,7 +7,7 @@ Curso desarrollo de aplicaciones con React, JSX, Browserify entre otras tecnolog
 
 ## Suscribete al curso
 
-Si quieres recibir actualizaciónes y novedades sobre el curso de Angular, da clic en "Watch" en la parte superior derecha.-
+Si quieres recibir actualizaciónes y novedades sobre el curso de React, da clic en "Watch" en la parte superior derecha.-
 
 ![Suscribirse al curso de Angular](http://blog.codeando.org/img/github.png)
 

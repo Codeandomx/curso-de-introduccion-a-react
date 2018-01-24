@@ -18,36 +18,35 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Clock = function (_React$Component) {
-    _inherits(Clock, _React$Component);
+var Button = function (_React$Component) {
+    _inherits(Button, _React$Component);
 
     // Declaramos los estados locales
-    function Clock(props) {
-        _classCallCheck(this, Clock);
+    function Button(props) {
+        _classCallCheck(this, Button);
 
-        var _this = _possibleConstructorReturn(this, (Clock.__proto__ || Object.getPrototypeOf(Clock)).call(this, props));
+        // Inicializamos el estado del componente
+        var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
 
         _this.state = {
-            date: new Date()
+            count: 0
         };
+        // Enlazamos this al manejador de evento
+        _this.handleClick = _this.handleClick.bind(_this);
         return _this;
     }
+    // Manejador de evento de nuestro boton
 
-    _createClass(Clock, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            var _this2 = this;
 
-            this.timerID = setInterval(function () {
-                _this2.setState({
-                    date: new Date()
-                });
-            }, 1000);
-        }
-    }, {
-        key: 'componentWillUnmount',
-        value: function componentWillUnmount() {
-            clearInterval(this.timerID);
+    _createClass(Button, [{
+        key: 'handleClick',
+        value: function handleClick(e) {
+            e.preventDefault();
+            this.setState(function (prevState) {
+                return {
+                    count: prevState.count + 1
+                };
+            });
         }
         // Código para renderizar
 
@@ -63,21 +62,21 @@ var Clock = function (_React$Component) {
                     'Bienvenidos a Codeando'
                 ),
                 _react2.default.createElement(
-                    'h2',
-                    null,
-                    this.state.date.toLocaleTimeString()
+                    'a',
+                    { href: '#', onClick: this.handleClick },
+                    this.state.count
                 )
             );
         }
     }]);
 
-    return Clock;
+    return Button;
 }(_react2.default.Component);
 
 ;
 
 // Renderizamos el componente
 var rootElement = document.getElementById('root');
-var element = _react2.default.createElement(Clock, null);
+var element = _react2.default.createElement(Button, null);
 
 _reactDom2.default.render(element, rootElement);

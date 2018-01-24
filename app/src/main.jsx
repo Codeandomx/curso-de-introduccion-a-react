@@ -1,27 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Clock extends React.Component
+class Button extends React.Component
 {
 	// Declaramos los estados locales
 	constructor(props)
 	{
 		super(props);
+        // Inicializamos el estado del componente
 		this.state = {
-			date: new Date()
+			count: 0
 		};
+        // Enlazamos this al manejador de evento
+        this.handleClick = this.handleClick.bind(this);
 	}
-	componentDidMount()
+    // Manejador de evento de nuestro boton
+    handleClick(e)
     {
-        this.timerID = setInterval(() => {
-            this.setState({
-                date: new Date()
-            });
-        }, 1000);
-    }
-    componentWillUnmount()
-    {
-        clearInterval(this.timerID);
+        e.preventDefault();
+        this.setState((prevState) => ({
+            count: (prevState.count + 1)
+        }));
     }
 	// Código para renderizar
     render()
@@ -29,14 +28,16 @@ class Clock extends React.Component
         return (
             <div>
                 <h1>Bienvenidos a Codeando</h1>
-                <h2>{this.state.date.toLocaleTimeString()}</h2>
+                <a href="#" onClick={this.handleClick}>
+                    {this.state.count}
+                </a>                
             </div>
         );
     };
-}; 
+};
 
 // Renderizamos el componente
 const rootElement = document.getElementById('root');
-const element = <Clock />;
+const element = <Button />;
 
 ReactDOM.render(element, rootElement);

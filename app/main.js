@@ -19,66 +19,69 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Button = function (_React$Component) {
-    _inherits(Button, _React$Component);
+// creamos una lista de nombres
+var names = ['Paulo', 'Cesar', 'Hugo', 'Carlos'];
 
-    // Declaramos los estados locales
-    function Button(props) {
-        _classCallCheck(this, Button);
+// componente para elemento de lista
 
-        // Inicializamos el estado del componente
-        var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
+var Element = function (_React$Component) {
+    _inherits(Element, _React$Component);
 
-        _this.state = {
-            count: 0
-        };
-        // Enlazamos this al manejador de evento
-        _this.handleClick = _this.handleClick.bind(_this);
-        return _this;
+    function Element() {
+        _classCallCheck(this, Element);
+
+        return _possibleConstructorReturn(this, (Element.__proto__ || Object.getPrototypeOf(Element)).apply(this, arguments));
     }
-    // Manejador de evento de nuestro boton
 
-
-    _createClass(Button, [{
-        key: 'handleClick',
-        value: function handleClick(e) {
-            e.preventDefault();
-            this.setState(function (prevState) {
-                return {
-                    count: prevState.count + 1
-                };
-            });
-        }
-        // Código para renderizar
-
-    }, {
+    _createClass(Element, [{
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
+                'li',
                 null,
-                _react2.default.createElement(
-                    'h1',
-                    null,
-                    'Bienvenidos a Codeando'
-                ),
-                _react2.default.createElement(
-                    'a',
-                    { href: '#', onClick: this.handleClick },
-                    this.state.count
-                )
+                'Hola ',
+                this.props.name
             );
         }
     }]);
 
-    return Button;
+    return Element;
+}(_react2.default.Component);
+
+;
+
+// Componente contenedor para listas
+
+var List = function (_React$Component2) {
+    _inherits(List, _React$Component2);
+
+    function List() {
+        _classCallCheck(this, List);
+
+        return _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).apply(this, arguments));
+    }
+
+    _createClass(List, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'ul',
+                null,
+                this.props.names.map(function (name, index) {
+                    return _react2.default.createElement(Element, { key: index.toString(), name: name });
+                })
+            );
+        }
+    }]);
+
+    return List;
 }(_react2.default.Component);
 
 ;
 
 // Renderizamos el componente
 var rootElement = document.getElementById('root');
-var element = _react2.default.createElement(Button, null);
+var element = _react2.default.createElement(List, { names: names });
 
 _reactDom2.default.render(element, rootElement);
 },{"react":27,"react-dom":24}],2:[function(require,module,exports){

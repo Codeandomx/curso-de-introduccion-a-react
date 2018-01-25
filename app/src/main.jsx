@@ -1,43 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Button extends React.Component
+// creamos una lista de nombres
+let names = ['Paulo', 'Cesar', 'Hugo', 'Carlos'];
+
+// componente para elemento de lista
+class Element extends React.Component
 {
-	// Declaramos los estados locales
-	constructor(props)
-	{
-		super(props);
-        // Inicializamos el estado del componente
-		this.state = {
-			count: 0
-		};
-        // Enlazamos this al manejador de evento
-        this.handleClick = this.handleClick.bind(this);
-	}
-    // Manejador de evento de nuestro boton
-    handleClick(e)
-    {
-        e.preventDefault();
-        this.setState((prevState) => ({
-            count: (prevState.count + 1)
-        }));
-    }
-	// Código para renderizar
-    render()
-    {
+    render() {
         return (
-            <div>
-                <h1>Bienvenidos a Codeando</h1>
-                <a href="#" onClick={this.handleClick}>
-                    {this.state.count}
-                </a>                
-            </div>
-        );
-    };
+            <li>Hola {this.props.name}</li>
+        )
+    }
+};
+
+// Componente contenedor para listas
+class List extends React.Component
+{
+	render() {
+        return (
+            <ul>
+                {this.props.names.map((name, index) => {
+                    return <Element key={index.toString()} name={name} />
+                })}
+            </ul>
+        )
+    }
 };
 
 // Renderizamos el componente
 const rootElement = document.getElementById('root');
-const element = <Button />;
+const element = <List names={names} />;
 
 ReactDOM.render(element, rootElement);

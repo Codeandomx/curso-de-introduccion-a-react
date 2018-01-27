@@ -23,6 +23,7 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 2. [Introducción a JSX](http://blog.codeando.org/articulos/introduccion-a-jsx.html).
 3. [Componentes, props y estados](http://blog.codeando.org/articulos/componentes-props-y-estados-con-react.html)
 4. [Entendiendo el virtual DOM con React](http://blog.codeando.org/articulos/entendiendo-el-virtual-dom-en-react.html)
+5. [Manejadores de eventos con React](http://blog.codeando.org/articulos/manejadores-de-eventos-con-react.html)
 
 ## Instalación del entorno de desarrollo
 

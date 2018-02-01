@@ -24,6 +24,7 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 3. [Componentes, props y estados](http://blog.codeando.org/articulos/componentes-props-y-estados-con-react.html)
 4. [Entendiendo el virtual DOM con React](http://blog.codeando.org/articulos/entendiendo-el-virtual-dom-en-react.html)
 5. [Manejadores de eventos con React](http://blog.codeando.org/articulos/manejadores-de-eventos-con-react.html)
+6. [Mostrar datos de arrays con map() y React](http://blog.codeando.org/articulos/mostrar-datos-de-arrays-con-map-y-react.html)
 
 ## Instalación del entorno de desarrollo
 

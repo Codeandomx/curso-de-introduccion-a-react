@@ -9,7 +9,7 @@ Curso desarrollo de aplicaciones con React, JSX, Browserify entre otras tecnolog
 
 Si quieres recibir actualizaciónes y novedades sobre el curso de React, da clic en "Watch" en la parte superior derecha.-
 
-![Suscribirse al curso de Angular](http://blog.codeando.org/img/github.png)
+![Suscribirse al curso de Angular](http://blog.codeando.club/img/github.png)
 
 ## Ejemplos del curso
 
@@ -19,12 +19,12 @@ En la rama master encontraras un ejemplo básico de "Hola mundo" y el entorno de
 
 ## Temario del curso
 
-1. [Introducción a React](http://blog.codeando.org/articulos/introduccion-a-react-creando-aplicacion-basica.html).
-2. [Introducción a JSX](http://blog.codeando.org/articulos/introduccion-a-jsx.html).
-3. [Componentes, props y estados](http://blog.codeando.org/articulos/componentes-props-y-estados-con-react.html)
-4. [Entendiendo el virtual DOM con React](http://blog.codeando.org/articulos/entendiendo-el-virtual-dom-en-react.html)
-5. [Manejadores de eventos con React](http://blog.codeando.org/articulos/manejadores-de-eventos-con-react.html)
-6. [Mostrar datos de arrays con map() y React](http://blog.codeando.org/articulos/mostrar-datos-de-arrays-con-map-y-react.html)
+1. [Introducción a React](http://blog.codeando.club/articulos/introduccion-a-react-creando-aplicacion-basica.html).
+2. [Introducción a JSX](http://blog.codeando.club/articulos/introduccion-a-jsx.html).
+3. [Componentes, props y estados](http://blog.codeando.club/articulos/componentes-props-y-estados-con-react.html)
+4. [Entendiendo el virtual DOM con React](http://blog.codeando.club/articulos/entendiendo-el-virtual-dom-en-react.html)
+5. [Manejadores de eventos con React](http://blog.codeando.club/articulos/manejadores-de-eventos-con-react.html)
+6. [Mostrar datos de arrays con map() y React](http://blog.codeando.club/articulos/mostrar-datos-de-arrays-con-map-y-react.html)
 
 ## Instalación del entorno de desarrollo
 
@@ -80,7 +80,7 @@ El archivo HTML principal (index.html) lo encontramos en el directorio.-
 
 Ingresa a la plataforma y se parte de nuestra comunidad (Plataforma en desarrollo).
 
-[Plataforma Codeando](http://codeando.org)
+[Plataforma Codeando](http://codeando.club)
 
 ## Errores y aclaraciones sobre el código
 
